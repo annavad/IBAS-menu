@@ -1,10 +1,66 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Menu";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Næste Uge Menu</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Næste Uge Menu</h2>
+
+<table>
+  <tr>
+    <th>Dag</th>
+    <th>Varm Ret</th>
+    <th>Kold Ret</th>
+  </tr>
+  <tr>
+    <td>Mandag</td>
+    <td>Kylling og ris</td>
+    <td>Salat</td>
+  </tr>
+  <tr>
+    <td>Tirsdag</td>
+    <td>Pasta bolognese</td>
+    <td>Tunmousse</td>
+  </tr>
+  <tr>
+    <td>Onsdag</td>
+    <td>Stegt laks</td>
+    <td>Rugbrød med leverpostej</td>
+  </tr>
+  <tr>
+    <td>Torsdag</td>
+    <td>Lasagne</td>
+    <td>Kartoffelsalat</td>
+  </tr>
+  <tr>
+    <td>Fredag</td>
+    <td>Pizza</td>
+    <td>Grøntsagsstænger</td>
+  </tr>
+</table>
+
+</body>
+</html>
